@@ -6,7 +6,7 @@ pipeline{
                git 'https://github.com/GANGARAJU9052/declerative-pipeline.git'            
             }
         }
-        stages("maven Build"){
+        stage("maven Build"){
             steps{
                 sh "mvn clean package"
             }

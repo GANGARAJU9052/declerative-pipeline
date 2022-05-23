@@ -20,7 +20,8 @@ pipeline{
                      ssh ubuntu@172.31.13.180 /opt/tomcat9/bin/shutdown.sh
                      ssh ubuntu@172.31.13.180 /opt/tomcat9/bin/startup.sh
                 """
-            }
-        }     
+               }
+           }     
+        }
     }
 }

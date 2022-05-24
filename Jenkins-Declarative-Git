@@ -1,5 +1,5 @@
 pipeline{
-    agent {lable ('jenkins-node1')}
+    agent {label 'jenkins-node1'}
     stages{
         stage("Git Checkout"){
             steps{

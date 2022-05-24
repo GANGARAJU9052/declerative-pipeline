@@ -1,5 +1,5 @@
 pipeline{
-    agent {lable 'jenkins-slave1'}
+    agent {lable 'jenkins-node1'}
     stages{
         stage("Git Checkout"){
             steps{

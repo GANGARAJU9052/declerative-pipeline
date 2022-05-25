@@ -14,7 +14,7 @@ pipeline{
         }
         stage("deploy on tomcat"){
            steps{
-               sshagent(['tomcat-new']) {
+               sshagent(['tomcat9']) {
                sh """
                      scp -o StrictHostKeyChecking=no target/myweb.war ubuntu@172.31.39.71:/opt/tomcat9/webapps/
                      ssh ubuntu@172.31.39.71 /opt/tomcat9/bin/shutdown.sh

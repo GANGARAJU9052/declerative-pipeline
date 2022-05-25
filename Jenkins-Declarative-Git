@@ -6,5 +6,12 @@ pipeline{
                git 'https://github.com/GANGARAJU9052/declerative-pipeline.git'            
             }
         }
+        stage("maven Build"){
+            steps{
+                sh "mvn clean package"
+                sh "mv target/*.war target/myweb.war"
+            }
+        }
     }
+    
 }    
